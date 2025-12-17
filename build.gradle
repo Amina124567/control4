@@ -49,3 +49,8 @@ tasks.jacocoTestReport {
 		html.outputLocation = layout.buildDirectory.dir("jacocoHtml")
 	}
 }
+
+javadoc {
+    failOnError = false
+    destinationDir = file("$buildDir/docs/javadoc")
+}
